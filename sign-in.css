@@ -24,7 +24,6 @@ body {
 }
 
 .body {
-    padding: 2rem 0;
     width: 100%;
     height: 100vh;
     display: flex;
@@ -32,25 +31,28 @@ body {
     justify-content: center;
 }
 
-.sign-in-container {
-    width: 40%;
-    border: 0;
-    border-radius: 15px;
-    background-color: var(--lighter-secondary);
-    box-shadow: 9px 17px 69px -4px rgba(16, 73, 11, 0.75);
-    -webkit-box-shadow: 9px 17px 69px -4px rgba(16, 73, 11, 0.75);
-    -moz-box-shadow: 9px 17px 69px -4px rgba(16, 73, 11, 0.75);
+.container {
+    padding: 2rem 0;
+    background-color: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(3px);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    box-shadow: 0 10px 20px 5px rgba(0, 0, 0, 0.12);
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
 
-.top-img {
+
+/* .top-img {
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-}
+} */
 
-.form {
-    width: 100%;
+.login {
+    width: 74%;
     height: auto;
     padding: 0 0 2rem 0;
     display: flex;
@@ -59,7 +61,7 @@ body {
     justify-content: center;
 }
 
-.form__h2 {
+.login__h1 {
     font-family: var(--secondary-font);
     font-size: 2.5rem;
     color: var(--primary);
@@ -83,39 +85,32 @@ body {
 }
 
 .form__input:focus {
-    border-color: fuchsia;
+    border-color: salmon;
 }
 
 .form__button {
-    width: 100%;
+    width: 50%;
     outline: none;
     border: 0;
     padding: 0.5rem;
     border-radius: 15px;
     background-color: plum;
     font-family: var(--letra-chica);
+    text-align: center;
 }
 
-.buttons-container {
-    width: 80%;
-    display: grid;
-    grid-template-columns: 1fr 2fr;
+.sidebar {
+    width: 25%%;
 }
 
-
-/* ********** sign-up container ************** */
-
-.sign-up-container {
-    width: 100%%;
-}
-
-.sign-up__h3 {
+.sidebar__p {
     font-family: var(--letra-chica);
     font-size: 1.3rem;
 }
 
-.sign-up__a {
+.register-button {
     font-family: var(--secondary-font);
     font-size: 1.3rem;
     font-weight: 500;
+    text-decoration: none;
 }

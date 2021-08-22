@@ -23,27 +23,23 @@
 
 <body>
     <div class="body">
-
-        <div class="sign-in-container">
-            <div class="top-img">
-                <img src="img/flor-peq-02.png" alt="" width="200">
-            </div>
-            <form action="" class="form">
-                <h2 class="form__h2">Ingresar</h2>
-                <label for="" class="form__label">Usuario</label>
-                <input type="text" class="form__input">
-                <label for="" class="form__label">Contraseña</label>
-                <input type="password" class="form__input">
-            </form>
-            <div class="buttons-container">
+        <div class="container">
+            <div class="login">
+                <h1 class="login__h1">Ingresar</h1>
+                <label for="username" class="form__label">Usuario</label>
+                <input type="text" id="username" class="form__input">
+                <label for="password" class="form__label">Contraseña</label>
+                <input type="password" class="form__input" id="password">
                 <button type="submit" class="form__button">Ingresar</button>
-                <div class="sign-up-container">
-                    <h3 class="sign-up__h3">No tienes cuenta aún?</h3>
-                    <a href="" class="sign-up__a">Registrate</a>
-                </div>
+            </div>
+            <div class="sidebar">
+                <p class="sidebar__p">No tienes cuenta aún?</p>
+                <a href="" class="register-button">Registrate</a>
             </div>
         </div>
+
     </div>
+
 </body>
 
 </html>
