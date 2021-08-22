@@ -1,0 +1,121 @@
+:root {
+    --darkest: rgb(15, 112, 15);
+    --primary: #6c956c;
+    --secondary: #b9cca8;
+    --lighter-secondary: #dff0d0;
+    --third: #ffb5ac;
+    --fourth: #ffe4e1;
+    --white: ivory;
+    --main-font: 'Redressed', cursive;
+    --secondary-font: 'El Messiri', sans-serif;
+    --letra-chica: 'Didact Gothic', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    background-color: var(--lighter-secondary);
+    background-image: url(img/floral-background.png);
+}
+
+.body {
+    padding: 2rem 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sign-in-container {
+    width: 40%;
+    border: 0;
+    border-radius: 15px;
+    background-color: var(--lighter-secondary);
+    box-shadow: 9px 17px 69px -4px rgba(16, 73, 11, 0.75);
+    -webkit-box-shadow: 9px 17px 69px -4px rgba(16, 73, 11, 0.75);
+    -moz-box-shadow: 9px 17px 69px -4px rgba(16, 73, 11, 0.75);
+}
+
+.top-img {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form {
+    width: 100%;
+    height: auto;
+    padding: 0 0 2rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.form__h2 {
+    font-family: var(--secondary-font);
+    font-size: 2.5rem;
+    color: var(--primary);
+}
+
+.form__label {
+    font-family: var(--letra-chica);
+    font-size: 1.2rem;
+    padding-top: 1.5rem;
+}
+
+.form__input {
+    width: 70%;
+    height: 1.7rem;
+    background-color: transparent;
+    outline: none;
+    border: 0;
+    border-bottom: 2px solid gray;
+    transition: border-color 0.2s;
+    margin-bottom: 1.5rem;
+}
+
+.form__input:focus {
+    border-color: fuchsia;
+}
+
+.form__button {
+    width: 100%;
+    outline: none;
+    border: 0;
+    padding: 0.5rem;
+    border-radius: 15px;
+    background-color: plum;
+    font-family: var(--letra-chica);
+}
+
+.buttons-container {
+    width: 80%;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+
+/* ********** sign-up container ************** */
+
+.sign-up-container {
+    width: 100%%;
+}
+
+.sign-up__h3 {
+    font-family: var(--letra-chica);
+    font-size: 1.3rem;
+}
+
+.sign-up__a {
+    font-family: var(--secondary-font);
+    font-size: 1.3rem;
+    font-weight: 500;
+}

@@ -28,13 +28,13 @@
                 <li class="navbar__menu--li"><a href="#">Inicio</a></li>
                 <li class="navbar__menu--li"><a href="#about">Nosotros</a></li>
                 <li class="navbar__menu--li"><a href="#plants">Nuestras plantas</a></li>
-                <li class="navbar__menu--li"><a href="#">Contacto</a></li>
+                <li class="navbar__menu--li"><a href="#contact">Contacto</a></li>
             </ul>
         </div>
 
         <div class="nav__signinup-container">
             <ul class="navbar__menu">
-                <li class="navbar__menu--li"><button class="signin-button">Ingresar</button></li>
+                <li class="navbar__menu--li"><button class="signin-button"><a href="./login.html">Ingresar</a></button></li>
                 <li class="navbar__menu--li"><button class="signup-button">Registrarse</button></li>
             </ul>
         </div>
@@ -205,8 +205,8 @@
                                 <p class="cuidado__p">escasa agua</p>
                             </div>
                             <div class="cuidado">
-                                <i class="fas fa-house-user"></i>
-                                <p class="cuidado__p">apta interior</p>
+                                <i class="fas fa-seedling"></i>
+                                <p class="cuidado__p">para exterior</p>
                             </div>
                         </div>
                         <a href="" class="more"><button class="button-more">Ver más</button></a>
@@ -219,20 +219,20 @@
                     </div>
 
                     <div class="card__plant--description">
-                        <h3 class="card-description__h3">Suculentas</h3>
-                        <p class="card-description__p">Pequeñas, de fácil cuidado. Gran variedad de colores y formas.</p>
+                        <h3 class="card-description__h3">Frutales</h3>
+                        <p class="card-description__p">Nada mejor que ver crecer y poder consumir tus propios frutos.</p>
                         <div class="card-description__cuidados">
                             <div class="cuidado">
-                                <i class="fas fa-sun"></i>
-                                <p class="cuidado__p">necesita luz solar</p>
+                                <i class="fas fa-seedling"></i>
+                                <p class="cuidado__p">solo apto exterior</p>
                             </div>
                             <div class="cuidado">
                                 <i class="fas fa-tint"></i>
-                                <p class="cuidado__p">escasa agua</p>
+                                <p class="cuidado__p">riego frecuente</p>
                             </div>
                             <div class="cuidado">
-                                <i class="fas fa-house-user"></i>
-                                <p class="cuidado__p">apta interior</p>
+                                <i class="fas fa-apple-alt"></i>
+                                <p class="cuidado__p">frutos comestibles</p>
                             </div>
                         </div>
                         <a href="" class="more"><button class="button-more">Ver más</button></a>
@@ -241,8 +241,50 @@
 
             </div>
         </section>
+        <section class="contact-container" id="contact">
+            <div class="contact">
+                <div class="contact__img">
+                    <img src="img/muestra.png" alt="">
+                </div>
+                <div class="contact__form">
+                    <h2 class="contact__form--h2">Dejanos tu consulta</h2>
+                    <form class="contact--form">
+                        <label class="form__label" for="name">Nombre</label>
+                        <input class="form__input" type="text" name="nombre" id="name">
+                        <label class="form__label" for="email">Email</label>
+                        <input class="form__input" type="email" name="email" id="email">
+                        <label class="form__label" for="message">Mensaje</label>
+                        <textarea class="form__textarea" name="message" id="message" cols="30" rows="10"></textarea>
+                        <button type="submit" class="contact-button-submit">Enviar</button>
+                    </form>
+                </div>
+            </div>
+            <div class="contact-redes">
+                <h2 class="contact__redes--h2">También podés escribirnos por</h2>
+                <div class="redes">
+                    <div class="icono-red-social facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </div>
+                    <div class="icono-red-social instagram">
+                        <i class="fab fa-instagram"></i>
+                    </div>
+                    <div class="icono-red-social whatsapp">
+                        <i class="fab fa-whatsapp"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="custom-shape-divider-bottom-1629175868">
+                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                    <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+                </svg>
+            </div>
+        </section>
     </main>
-    <footer></footer>
+    <footer class="footer">
+        <div class="footer-container">
+            <p>2021 © Gabriela Fascetta</p>
+        </div>
+    </footer>
 </body>
 
 </html>
