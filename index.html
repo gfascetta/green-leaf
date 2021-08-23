@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="index.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Redressed&display=swap" rel="stylesheet">
@@ -34,8 +37,8 @@
 
         <div class="nav__signinup-container">
             <ul class="navbar__menu">
-                <li class="navbar__menu--li"><button class="signin-button"><a href="./login.html">Ingresar</a></button></li>
-                <li class="navbar__menu--li"><button class="signup-button"><a href="sign-up.html">Registrarme</a></button></li>
+                <li class="navbar__menu--li"><a href="sign-in.html" class="signin-button">Ingresar</a></li>
+                <li class="navbar__menu--li"><a href="sign-up.html" class="signup-button">Registrarme</a></li>
             </ul>
         </div>
     </nav>
@@ -62,6 +65,7 @@
             </div>
         </section>
 
+        <!-- ---seccion about--- -->
         <section class="about">
             <div class="custom-shape-divider-top-1629176088">
                 <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
@@ -79,13 +83,14 @@
 
         </section>
 
+        <!-- ---seccion plantas--- -->
         <section class="plants-section" id="plants">
 
             <h2 class="plants-section__h2">Nuestras plantas</h2>
             <div class="card-container__plants">
                 <div class="card__plant">
                     <div class="card__plant--foto">
-                        <img src="img/plants/sansevieria.jpg" alt="" width="300">
+                        <img src="img/plants/suculentas.jpg" alt="" width="300">
                     </div>
 
                     <div class="card__plant--description">
@@ -111,12 +116,12 @@
 
                 <div class="card__plant">
                     <div class="card__plant--foto">
-                        <img src="img/plants/sansevieria.jpg" alt="" width="300">
+                        <img src="img/plants/cactus-3.jpg" alt="" width="300">
                     </div>
 
                     <div class="card__plant--description">
                         <h3 class="card-description__h3">Cactus</h3>
-                        <p class="card-description__p">Creá tu desierto miniatura. Fácil mantenimiento. Se adaptan a cualquier ambiente</p>
+                        <p class="card-description__p">Creá tu desierto miniatura. Fácil mantenimiento y gran variedad.</p>
                         <div class="card-description__cuidados">
                             <div class="cuidado">
                                 <i class="far fa-snowflake"></i>
@@ -137,7 +142,7 @@
 
                 <div class="card__plant">
                     <div class="card__plant--foto">
-                        <img src="img/plants/sansevieria.jpg" alt="" width="300">
+                        <img src="img/plants/flores.jpg" alt="" width="300">
                     </div>
 
                     <div class="card__plant--description">
@@ -163,7 +168,7 @@
 
                 <div class="card__plant">
                     <div class="card__plant--foto">
-                        <img src="img/plants/sansevieria.jpg" alt="" width="300">
+                        <img src="img/plants/bonsai.jpg" alt="" width="300">
                     </div>
 
                     <div class="card__plant--description">
@@ -189,7 +194,7 @@
 
                 <div class="card__plant">
                     <div class="card__plant--foto">
-                        <img src="img/plants/sansevieria.jpg" alt="" width="300">
+                        <img src="img/plants/aromaticas.jpg" alt="" width="300">
                     </div>
 
                     <div class="card__plant--description">
@@ -215,7 +220,7 @@
 
                 <div class="card__plant">
                     <div class="card__plant--foto">
-                        <img src="img/plants/sansevieria.jpg" alt="" width="300">
+                        <img src="img/plants/frutales.jpg" alt="" width="300">
                     </div>
 
                     <div class="card__plant--description">
@@ -241,10 +246,11 @@
 
             </div>
         </section>
+        <!-- ---seccion de contacto--- -->
         <section class="contact-container" id="contact">
             <div class="contact">
                 <div class="contact__img">
-                    <img src="img/muestra.png" alt="">
+                    <img class="contact-aside-img" src="img/balcones/1.jpg" alt="">
                 </div>
                 <div class="contact__form">
                     <h2 class="contact__form--h2">Dejanos tu consulta</h2>
@@ -282,7 +288,7 @@
     </main>
     <footer class="footer">
         <div class="footer-container">
-            <p>2021 © Gabriela Fascetta</p>
+            <p class="footer-firma-p">2021 © Gabriela Fascetta</p>
         </div>
     </footer>
 </body>

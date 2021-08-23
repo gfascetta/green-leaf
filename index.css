@@ -9,6 +9,7 @@
     --main-font: 'Redressed', cursive;
     --secondary-font: 'El Messiri', sans-serif;
     --letra-chica: 'Didact Gothic', sans-serif;
+    --font-ajustada: 'Roboto Condensed', sans-serif;
 }
 
 * {
@@ -129,9 +130,9 @@ body {
     justify-content: center;
     overflow: hidden;
     position: relative;
-    box-shadow: -1px 5px 82px 19px rgba(233, 193, 108, 0.36) inset;
-    -webkit-box-shadow: -1px 5px 82px 19px rgba(233, 193, 108, 0.36) inset;
-    -moz-box-shadow: -1px 5px 82px 19px rgba(233, 193, 108, 0.36) inset;
+    box-shadow: -1px 5px 82px 19px rgba(224, 191, 117, 0.36) inset;
+    -webkit-box-shadow: -1px 5px 82px 19px rgba(224, 191, 117, 0.36) inset;
+    -moz-box-shadow: -1px 5px 82px 19px rgba(224, 191, 117, 0.36) inset;
 }
 
 .custom-shape-divider-top-1629176088 {
@@ -220,8 +221,9 @@ body {
 }
 
 .hero-section__h2 {
-    font-family: var(--letra-chica);
+    font-family: var(--font-ajustada);
     text-transform: uppercase;
+    font-weight: 500;
 }
 
 
@@ -489,6 +491,12 @@ body {
     width: 30%;
 }
 
+.contact-aside-img {
+    width: 80%;
+    overflow: hidden;
+    border-radius: 15px;
+}
+
 .contact__form {
     width: 40%;
     height: auto;
@@ -553,12 +561,16 @@ body {
     border-radius: 15px;
     font-family: var(--letra-chica);
     font-size: 1.2rem;
+    cursor: pointer;
+    transition-property: box-shadow;
+    transition-timing-function: ease-in;
+    transition-duration: 0.5s;
 }
 
 .contact-button-submit:hover {
-    box-shadow: 10px 10px 13px -1px rgba(0, 0, 0, 0.38);
-    -webkit-box-shadow: 10px 10px 13px -1px rgba(0, 0, 0, 0.38);
-    -moz-box-shadow: 10px 10px 13px -1px rgba(0, 0, 0, 0.38);
+    box-shadow: 10px 10px 13px -5px rgba(0, 0, 0, 0.20);
+    -webkit-box-shadow: 10px 10px 13px -5px rgba(0, 0, 0, 0.20);
+    -moz-box-shadow: 10px 10px 13px -5px rgba(0, 0, 0, 0.20);
 }
 
 .contact-redes {
@@ -594,6 +606,16 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
+    transition-property: box-shadow;
+    transition-timing-function: ease-in;
+    transition-duration: 0.5s;
+}
+
+.icono-red-social:hover {
+    box-shadow: 10px 10px 13px -5px rgba(0, 0, 0, 0.20);
+    -webkit-box-shadow: 10px 10px 13px -5px rgba(0, 0, 0, 0.20);
+    -moz-box-shadow: 10px 10px 13px -5px rgba(0, 0, 0, 0.20);
 }
 
 .facebook {
@@ -619,5 +641,19 @@ body {
 .footer {
     background-color: var(--primary);
     width: 100%;
-    height: auto;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-container {
+    width: 100%;
+}
+
+.footer-firma-p {
+    width: 100%;
+    text-align: center;
+    font-family: var(--letra-chica);
+    color: var(--fourth);
 }
