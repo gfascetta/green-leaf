@@ -473,11 +473,16 @@ body {
 }
 
 .contact {
-    width: 100%;
+    width: 80%;
+    padding-top: 1.5rem;
     height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(3px);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    box-shadow: 0 10px 20px 5px rgba(0, 0, 0, 0.12);
 }
 
 .contact__img {
@@ -538,7 +543,7 @@ body {
 
 .contact-button-submit {
     padding: 0.2rem 0;
-    margin-top: 1rem;
+    margin: 1rem 0 2rem 0;
     padding: 1rem 0;
     width: 30%;
     align-self: center;
@@ -548,6 +553,12 @@ body {
     border-radius: 15px;
     font-family: var(--letra-chica);
     font-size: 1.2rem;
+}
+
+.contact-button-submit:hover {
+    box-shadow: 10px 10px 13px -1px rgba(0, 0, 0, 0.38);
+    -webkit-box-shadow: 10px 10px 13px -1px rgba(0, 0, 0, 0.38);
+    -moz-box-shadow: 10px 10px 13px -1px rgba(0, 0, 0, 0.38);
 }
 
 .contact-redes {
