@@ -266,6 +266,7 @@ form {
         display: flex;
         align-items: center;
         justify-content: center;
+        position: relative;
     }
     .fa-bars {
         font-size: 1.5rem;
