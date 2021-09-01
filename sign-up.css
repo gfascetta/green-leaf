@@ -267,10 +267,19 @@ form {
         align-items: center;
         justify-content: center;
     }
-    .fa-bars,
-    .fa-times {
-        font-size: 2rem;
+    .fa-bars {
+        font-size: 1.5rem;
         color: var(--lighter-secondary);
+        position: absolute;
+        top: 0;
+        left: 2rem;
+        z-index: 1;
+    }
+    .fa-times {
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 2rem;
     }
     #navbar__checkbox:checked~.nav__menu--ul {
         width: 75%;
