@@ -75,7 +75,7 @@ body {
 }
 
 .login-menu {
-    width: 20%;
+    width: 25%;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -84,12 +84,12 @@ body {
 .sign-in,
 .sign-up {
     border: 1px solid var(--white);
-    padding: 0.5rem;
+    padding: 0.3rem;
     border-radius: 10px;
 }
 
 .sign-in {
-    background-color: var(--secondary);
+    background-color: #96c071;
 }
 
 .sign-in:hover {
@@ -710,10 +710,12 @@ body {
         align-items: center;
         justify-content: center;
     }
-    .fa-bars,
-    .fa-times {
+    .fa-bars {
         font-size: 1.5rem;
         color: var(--lighter-secondary);
+    }
+    .fa-times {
+        display: none;
     }
     #navbar__checkbox:checked~.menu-container {
         width: 75%;
@@ -726,6 +728,8 @@ body {
         display: flex;
         align-items: center;
         justify-content: center;
+        font-size: 1.5rem;
+        color: var(--lighter-secondary);
     }
     /* section about */
     .about {

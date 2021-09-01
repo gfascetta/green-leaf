@@ -306,6 +306,12 @@ form {
     .form {
         width: 100%;
     }
+    .sign-up__h1 {
+        font-size: 2rem;
+    }
+    .form__label {
+        padding-top: 1.2rem;
+    }
     .botones-container {
         display: flex;
         flex-direction: column;
