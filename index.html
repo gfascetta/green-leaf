@@ -26,19 +26,33 @@
 
 <body>
     <nav class="navbar">
-        <div class="nav__menu-container">
-            <ul class="navbar__menu" id="menu">
-                <li class="navbar__menu--li"><a href="#">Inicio</a></li>
-                <li class="navbar__menu--li"><a href="#about">Nosotros</a></li>
-                <li class="navbar__menu--li"><a href="#plants">Nuestras plantas</a></li>
-                <li class="navbar__menu--li"><a href="#contact">Contacto</a></li>
+        <input type="checkbox" name="" id="navbar__checkbox">
+        <label for="navbar__checkbox" class="navbar__label">
+            <i class="fas fa-bars"></i>
+            <i class="fas fa-times"></i>
+        </label>
+        <div class="menu-container">
+            <ul class="nav__menu--ul">
+                <li class="nav__menu--li">
+                    <a href="" class="menu-link">Inicio</a>
+                </li>
+                <li class="nav__menu--li">
+                    <a href="" class="menu-link">Nosotros</a>
+                </li>
+                <li class="nav__menu--li">
+                    <a href="" class="menu-link">Nuestras plantas</a>
+                </li>
+                <li class="nav__menu--li">
+                    <a href="" class="menu-link">Contacto</a>
+                </li>
             </ul>
-        </div>
-
-        <div class="nav__signinup-container">
-            <ul class="navbar__menu">
-                <li class="navbar__menu--li"><a href="sign-in.html" class="signin-button">Ingresar</a></li>
-                <li class="navbar__menu--li"><a href="sign-up.html" class="signup-button">Registrarme</a></li>
+            <ul class="login-menu">
+                <li class="nav__menu--li">
+                    <a href="" class="menu-link sign-in">Ingresar</a>
+                </li>
+                <li class="nav__menu--li">
+                    <a href="" class="menu-link sign-up">Registrarme</a>
+                </li>
             </ul>
         </div>
     </nav>
@@ -74,8 +88,9 @@
             </div>
             <div class="about__text">
                 <h2 class="about__text--h2">Acerca de nosotros</h2>
-                <p class="about__text--p">Hacer realidad tu jardín soñado es nuestra vocación. blabla los beneficios de tener plantas: aire, impacto en lo animico, estetico. Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, harum, ab labore ex veniam cumque reprehenderit
-                    inventore quos commodi, aspernatur voluptas voluptatem voluptates nostrum ipsa..... Consultá nuestro catálogo. Viste algo que te gustó en la calle y no lo tenemos publicado? Mandanos una foto y te lo conseguimos! </p>
+                <p class="about__text--p">Hacer realidad tu jardín soñado es nuestra vocación. En Green Leaf somos defensores de los beneficios de tener plantas en tu hogar. Además de ser altamente decorativas, mejoran nuestro estado anímico, limpian el aire, ayudan a respirar
+                    mejor, reducen el ruido y el estrés.</p>
+                <p class="about__text--p">¿Qué estás esperando? Consultá nuestro catálogo y empezá a disfrutar. ¿Viste algo que te gustó en la calle y no lo tenemos publicado? Mandanos una foto y te lo conseguimos! </p>
             </div>
             <div class="about__img">
                 <img src="img/rincon verde.jpg" alt="" height="300px">
@@ -248,22 +263,28 @@
         </section>
         <!-- ---seccion de contacto--- -->
         <section class="contact-container" id="contact">
+
             <div class="contact">
-                <div class="contact__img">
-                    <img class="contact-aside-img" src="img/balcones/1.jpg" alt="">
+                <h2 class="contact--h2">Hacenos tu consulta</h2>
+                <div class="contact-body-container">
+                    <div class="contact__img">
+                        <img class="contact-aside-img" src="img/balcones/1.jpg" alt="">
+                    </div>
+                    <div class="contact__form">
+                        <form class="contact--form">
+                            <label class="form__label" for="name">Nombre</label>
+                            <input class="form__input" type="text" name="nombre" id="name">
+                            <label class="form__label" for="email">Email</label>
+                            <input class="form__input" type="email" name="email" id="email">
+                            <label class="form__label" for="message">Mensaje</label>
+                            <textarea class="form__textarea" name="message" id="message" cols="30" rows="10"></textarea>
+                            <button type="submit" class="contact-button-submit">Enviar</button>
+                        </form>
+                    </div>
+
                 </div>
-                <div class="contact__form">
-                    <h2 class="contact__form--h2">Dejanos tu consulta</h2>
-                    <form class="contact--form">
-                        <label class="form__label" for="name">Nombre</label>
-                        <input class="form__input" type="text" name="nombre" id="name">
-                        <label class="form__label" for="email">Email</label>
-                        <input class="form__input" type="email" name="email" id="email">
-                        <label class="form__label" for="message">Mensaje</label>
-                        <textarea class="form__textarea" name="message" id="message" cols="30" rows="10"></textarea>
-                        <button type="submit" class="contact-button-submit">Enviar</button>
-                    </form>
-                </div>
+
+
             </div>
             <div class="contact-redes">
                 <h2 class="contact__redes--h2">También podés escribirnos por</h2>

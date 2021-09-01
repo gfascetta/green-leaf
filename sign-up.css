@@ -22,7 +22,79 @@ body {
     background-color: var(--lighter-secondary);
     background-image: url(img/5447182.jpg);
     background-size: cover;
+    overflow: hidden;
 }
+
+
+/* ************************************************* */
+
+
+/* --------------nav menu hamburguesa----------------- */
+
+.navbar {
+    width: 100%;
+    height: 9vh;
+    background-color: var(--primary);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+#navbar__checkbox,
+.navbar__label,
+.fa-times {
+    display: none;
+}
+
+.nav__menu--ul {
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.nav__menu--li {
+    list-style: none;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.menu-link {
+    text-decoration: none;
+    color: var(--white);
+    text-shadow: 3px 0px 2px rgba(0, 0, 0, 0.43);
+    font-family: var(--secondary-font);
+}
+
+.menu-link:hover {
+    cursor: pointer;
+    color: rgb(1, 53, 1);
+    text-shadow: 3px 0px 2px rgba(255, 255, 255, 0.43);
+}
+
+.login-menu {
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.nav__logo {
+    width: 20%;
+    height: auto;
+    padding: 0.4rem;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.logo-img {
+    width: 70%;
+}
+
+
+/* *************************************************** */
 
 .body {
     width: 100%;
@@ -131,4 +203,113 @@ form {
     text-decoration: underline;
     font-family: var(--letra-chica);
     font-size: 1.2rem;
+}
+
+
+/* **************************************************************** */
+
+
+/* ----------------RESPONSIVE------------------- */
+
+
+/* ******************************************************************** */
+
+@media (min-width:0px) and (max-width:900px) {
+    /* navbar */
+    .nav__logo {
+        width: 30%;
+    }
+    .logo-img {
+        width: 100%;
+        padding: 0.5rem;
+    }
+    .nav__menu--ul {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        top: 9vh;
+        left: 0;
+        transform: translateX(-200%);
+        background-color: var(--primary);
+        transition-property: transform;
+        transition-duration: 2s;
+        transition-timing-function: ease-in-out;
+        z-index: 3;
+    }
+    .sign-up,
+    .sign-in {
+        border: 0;
+        background-color: transparent;
+    }
+    .sign-in:hover,
+    .sign-up:hover {
+        background-color: transparent;
+    }
+    .nav__menu--ul,
+    .login-menu {
+        width: 100%;
+        flex-direction: column;
+    }
+    .nav__menu--li {
+        width: 100%;
+        border-bottom: 1px solid var(--lighter-secondary);
+        text-align: center;
+        padding: 0.35rem 0;
+    }
+    .nav__menu--li:hover {
+        background-color: var(--secondary);
+        filter: brightness(120%);
+    }
+    .navbar__label {
+        width: 20%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .fa-bars,
+    .fa-times {
+        font-size: 2rem;
+        color: var(--lighter-secondary);
+    }
+    #navbar__checkbox:checked~.nav__menu--ul {
+        width: 75%;
+        transform: translateX(0);
+    }
+    #navbar__checkbox:checked~.navbar__label>.fa-bars {
+        display: none;
+    }
+    #navbar__checkbox:checked~.navbar__label>.fa-times {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    /* contenedor que tiene todo el cuerpo delante del fondo */
+    .container {
+        width: 80%;
+    }
+}
+
+@media (max-width:550px) {
+    /* navbar */
+    .nav__logo {
+        width: 40%;
+    }
+    .logo-img {
+        width: 100%;
+        padding: 0.5rem;
+    }
+    /* contenedor que tiene todo el cuerpo delante del fondo */
+    .sidebar {
+        display: none;
+    }
+    .form {
+        width: 100%;
+    }
+    .botones-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
 }
