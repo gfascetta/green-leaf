@@ -292,6 +292,8 @@ form {
         display: flex;
         align-items: center;
         justify-content: center;
+        font-size: 1.5rem;
+        color: var(--lighter-secondary);
     }
     /* contenedor que tiene todo el cuerpo delante del fondo */
     .container {
