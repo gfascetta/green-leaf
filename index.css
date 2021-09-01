@@ -715,13 +715,13 @@ body {
         font-size: 1.5rem;
         color: var(--lighter-secondary);
         position: absolute;
-        top: 1rem;
+        top: 0.5rem;
         left: 1rem;
     }
     .fa-times {
         display: none;
         position: absolute;
-        top: 1rem;
+        top: 0.5rem;
         left: 1rem;
     }
     #navbar__checkbox:checked~.menu-container {
