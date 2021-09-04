@@ -677,9 +677,12 @@ body {
         transform: translateX(-200%);
         background-color: var(--primary);
         transition-property: transform;
-        transition-duration: 1.5s;
+        transition-duration: 1s;
         transition-timing-function: ease-in-out;
         z-index: 3;
+        box-shadow: 4px 12px 44px 8px rgba(0, 0, 0, 0.70);
+        -webkit-box-shadow: 4px 12px 44px 8px rgba(0, 0, 0, 0.70);
+        -moz-box-shadow: 4px 12px 44px 8px rgba(0, 0, 0, 0.70);
     }
     .sign-up,
     .sign-in {
