@@ -237,7 +237,7 @@ form {
         transform: translateX(-200%);
         background-color: var(--primary);
         transition-property: transform;
-        transition-duration: 2s;
+        transition-duration: 1.5s;
         transition-timing-function: ease-in-out;
         z-index: 3;
     }
@@ -282,7 +282,7 @@ form {
         opacity: 0;
     }
     #navbar__checkbox:checked~.nav__menu--ul {
-        width: 75%;
+        width: 100%;
         transform: translateX(0);
     }
     #navbar__checkbox:checked~.navbar__label>.fa-bars {
@@ -299,6 +299,13 @@ form {
     /* contenedor que tiene todo el cuerpo delante del fondo */
     .container {
         width: 80%;
+        padding: 1rem;
+    }
+    .login {
+        padding-bottom: 1rem;
+    }
+    .sidebar {
+        padding-top: 0rem;
     }
 }
 
@@ -323,6 +330,9 @@ form {
     }
     .form__label {
         padding-top: 1.2rem;
+    }
+    .form__input {
+        width: 90%;
     }
     .botones-container {
         display: flex;
